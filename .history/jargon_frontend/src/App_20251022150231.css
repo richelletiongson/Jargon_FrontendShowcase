@@ -1,0 +1,11 @@
+* {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+main {
+  background-color: #949494;
+  padding-bottom: 80px;
+}

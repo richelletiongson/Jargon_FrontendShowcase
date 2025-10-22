@@ -1,0 +1,64 @@
+/* Bottom Navigation Styles */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FDFBF6;
+  padding: 16px 0;
+  border-top: 1px solid #E8D5C4;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-width: 50px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-item:hover {
+  background-color: #F5F0E8;
+}
+
+.nav-item.active {
+  background: linear-gradient(135deg, #F9D423 0%, #F9A826 100%);
+  color: white;
+  box-shadow: 0 2px 8px rgba(249, 164, 38, 0.3);
+}
+
+.nav-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.nav-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: inherit;
+}
+
+.nav-item:not(.active) .nav-icon {
+  color: #5C3D2E;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .nav-icon {
+    font-size: 20px;
+  }
+  
+  .nav-text {
+    font-size: 10px;
+  }
+}

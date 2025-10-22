@@ -1,0 +1,165 @@
+/* AI Page Styles */
+.ai-page {
+  min-height: 100vh;
+  background-color: #FDFBF6;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Status Bar */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #FDFBF6;
+  color: #5C3D2E;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.status-icons {
+  display: flex;
+  gap: 8px;
+  font-size: 18px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #5C3D2E;
+  margin-bottom: 60px;
+  line-height: 1.2;
+}
+
+/* File Upload Container */
+.file-upload-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.file-upload-area {
+  background-color: #FDFBF6;
+  border: 3px dashed #E0B07B;
+  border-radius: 12px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.file-upload-area:hover {
+  border-color: #D4A574;
+  background-color: #FEFCF7;
+}
+
+.upload-icon {
+  font-size: 48px;
+  color: #5C3D2E;
+  margin-bottom: 10px;
+}
+
+.upload-text {
+  color: #5C3D2E;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.choose-file-btn {
+  background-color: #5C3D2E;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.choose-file-btn:hover {
+  background-color: #4A3225;
+}
+
+.selected-file {
+  color: #5C3D2E;
+  font-size: 14px;
+  margin: 10px 0 0 0;
+  font-style: italic;
+}
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .main-content {
+    padding: 30px 16px;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .file-upload-area {
+    padding: 30px 16px;
+  }
+  
+  .upload-icon {
+    font-size: 40px;
+  }
+  
+  .upload-text {
+    font-size: 14px;
+  }
+  
+  .choose-file-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .status-bar {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  
+  .main-content {
+    padding: 20px 12px;
+  }
+  
+  .page-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  
+  .file-upload-area {
+    padding: 24px 12px;
+  }
+  
+  .nav-icon {
+    font-size: 20px;
+  }
+  
+  .nav-text {
+    font-size: 10px;
+  }
+}
