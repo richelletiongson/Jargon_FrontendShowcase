@@ -15,6 +15,10 @@ function App() {
                     <Routes>
                         <Route
                             path='/'
+                            element={<AI />}
+                        />
+                        <Route
+                            path='/home'
                             element={<Home />}
                         />
                         <Route
