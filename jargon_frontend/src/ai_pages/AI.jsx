@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './AI.css';
 import UploadIcon from '../assets/Upload_Icon.svg';
+import RockyImage from '../assets/AI_Rocky.PNG';
 
 const AI = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -18,7 +19,7 @@ const AI = () => {
       {/* Main Content */}
       <div className="main-content">
         <div className='rocky-container'>
-
+          <img src={RockyImage} alt="Rocky" className="rocky-image" />
         </div>
         <div className="file-upload-container">
           <div className="file-upload-area">
