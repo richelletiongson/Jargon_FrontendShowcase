@@ -1,15 +1,16 @@
-import './App.css'
+import "./App.css";
 import NavBar from "./components/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./home_pages/Home";
 import Course from "./course_pages/Course";
 import AI from "./ai_pages/AI";
+import FlashcardPage from "./ai_pages/FlashcardPage";
 import Charts from "./charts_pages/Charts";
 import Profile from "./profile_pages/Profile";
 
 function App() {
-  return (
-    <BrowserRouter>
+    return (
+        <BrowserRouter>
             <div className='page'>
                 <main className='main-content'>
                     <Routes>
@@ -30,6 +31,10 @@ function App() {
                             element={<AI />}
                         />
                         <Route
+                            path='/flashcards'
+                            element={<FlashcardPage />}
+                        />
+                        <Route
                             path='/charts'
                             element={<Charts />}
                         />
@@ -37,13 +42,12 @@ function App() {
                             path='/profile'
                             element={<Profile />}
                         />
-                        
                     </Routes>
                 </main>
                 <NavBar />
             </div>
         </BrowserRouter>
-  )
+    );
 }
 
-export default App
+export default App;
