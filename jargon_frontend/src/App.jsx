@@ -1,10 +1,11 @@
 import './App.css'
 import NavBar from "./components/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Course from "./pages/Course";
-import AI from "./pages/AI";
-import Profile from "./pages/Profile";
+import Home from "./home_pages/Home";
+import Course from "./course_pages/Course";
+import AI from "./ai_pages/AI";
+import Charts from "./charts_pages/Charts";
+import Profile from "./profile_pages/Profile";
 
 function App() {
   return (
@@ -17,19 +18,19 @@ function App() {
                             element={<Home />}
                         />
                         <Route
-                            path='/browse'
+                            path='/course'
                             element={<Course />}
                         />
                         <Route
-                            path='/my-movies'
+                            path='/ai'
                             element={<AI />}
                         />
                         <Route
-                            path='/watchlist'
+                            path='/charts'
                             element={<Charts />}
                         />
                         <Route
-                            path='/favourites-myreviews'
+                            path='/profile'
                             element={<Profile />}
                         />
                         
