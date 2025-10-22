@@ -14,9 +14,9 @@ const AI = () => {
 
   return (
     <div className="ai-page">
+              <h1 className="page-title">AI Translate & Lesson</h1>
       {/* Main Content */}
       <div className="main-content">
-        <h1 className="page-title">AI Translate & Lesson</h1>
         <div className='rocky-container'>
 
         </div>
