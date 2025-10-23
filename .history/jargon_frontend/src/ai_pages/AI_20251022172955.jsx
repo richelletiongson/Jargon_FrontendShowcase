@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './AI.css';
 import UploadIcon from '../assets/Upload_Icon.svg';
 import RockyImage from '../assets/AI_Rocky.PNG';
-import JargonWordmark from '../assets/Jargon_Wordmark.png';
 
 const AI = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -17,9 +17,6 @@ const AI = () => {
   return (
     <div className="ai-page">
       <div className="main-content">
-        <div className="wordmark-container">
-          <img src={JargonWordmark} alt="Jargon" className="jargon-wordmark" />
-        </div>
         <h1 className="page-title">AI Translate & Lesson</h1>
         <div className='rocky-container'>
           <img src={RockyImage} alt="Rocky" className="rocky-image" />
@@ -42,6 +39,11 @@ const AI = () => {
               <p className="selected-file">Selected: {selectedFile.name}</p>
             )}
           </div>
+        </div>
+        <div className="flashcard-link">
+          <Link to="/flashcards" className="flashcard-btn">
+            View Flashcards
+          </Link>
         </div>
       </div>
     </div>

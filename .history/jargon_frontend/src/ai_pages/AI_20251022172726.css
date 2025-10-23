@@ -20,24 +20,11 @@
   text-align: center;
 }
 
-.wordmark-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 0;
-}
-
-.jargon-wordmark {
-  width: 75%;
-  height: auto;
-}
-
 .page-title {
   font-size: 28px;
   font-weight: bold;
   color: #5C3D2E;
   padding: 0 20px 0 20px;
-  margin: 0 0 20px 0;
   line-height: 1.2;
 }
 
@@ -45,7 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 100px;
  
 }
 
@@ -108,4 +95,3 @@
   margin: 10px 0 0 0;
   font-style: italic;
 }
-

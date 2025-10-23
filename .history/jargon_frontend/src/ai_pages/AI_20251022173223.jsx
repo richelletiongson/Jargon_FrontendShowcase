@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './AI.css';
 import UploadIcon from '../assets/Upload_Icon.svg';
 import RockyImage from '../assets/AI_Rocky.PNG';
@@ -42,6 +43,11 @@ const AI = () => {
               <p className="selected-file">Selected: {selectedFile.name}</p>
             )}
           </div>
+        </div>
+        <div className="flashcard-link">
+          <Link to="/flashcards" className="flashcard-btn">
+            View Flashcards
+          </Link>
         </div>
       </div>
     </div>

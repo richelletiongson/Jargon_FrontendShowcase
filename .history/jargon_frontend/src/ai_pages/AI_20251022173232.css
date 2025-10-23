@@ -24,11 +24,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 0;
+  padding: 20px 0 10px 0;
 }
 
 .jargon-wordmark {
-  width: 75%;
+  max-width: 200px;
   height: auto;
 }
 
@@ -45,7 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 100px;
  
 }
 
@@ -109,3 +109,22 @@
   font-style: italic;
 }
 
+.flashcard-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.flashcard-btn {
+  background-color: #5C3D2E;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.flashcard-btn:hover {
+  background-color: #4A3225;
+}

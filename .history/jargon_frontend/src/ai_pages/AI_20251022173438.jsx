@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './AI.css';
 import UploadIcon from '../assets/Upload_Icon.svg';
 import RockyImage from '../assets/AI_Rocky.PNG';
